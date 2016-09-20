@@ -14,6 +14,25 @@ public class Calculator {
 			this.result += param;
 		}
 	}
+	
+    public void noadd(int ... params) {
+		for (Integer param : params) {
+			this.result -= param;
+		}
+	}
+	
+    public void mult(int ... params) {
+		for (Integer param : params) {
+			this.result *= param;
+		}
+	}	
+	
+  public void delen(int ... params) {
+		for (Integer param : params) {
+			this.result /= param;
+		}
+	}	
+	
 	public int getResult() {
 		return this.result;
 	}
